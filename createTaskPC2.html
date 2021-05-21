@@ -1,0 +1,147 @@
+<html>
+<center>
+  <head>
+    <title>Greek Battle</title>
+      <script>
+        function onload()
+        {
+          document.getElementById("starting").style.visibility = "visible";
+          document.getElementById("zeusW").style.visibility = "hidden";
+          document.getElementById("poseW").style.visibility = "hidden";
+          document.getElementById("hadeW").style.visibility = "hidden";
+          document.getElementById("a1").style.visibility = "hidden";
+          document.getElementById("a2").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "hidden";
+          document.getElementById("a4").style.visibility = "hidden";
+          document.getElementById("o1").style.visibility = "hidden";
+          document.getElementById("o2").style.visibility = "hidden";
+          document.getElementById("o3").style.visibility = "hidden";
+          document.getElementById("o4").style.visibility = "hidden";
+          document.getElementById("o5").style.visibility = "hidden";
+          document.getElementById("o6").style.visibility = "hidden";
+          var intro = "Hello! Welcome to your Greek Battle! Click \"START\" to start.";
+          document.getElementById("output").innerHTML = intro
+        }
+        function chooseFather()
+        {
+          intro = "";
+          document.getElementById("starting").style.visibility = "hidden";
+          document.getElementById("output").innerHTML = intro;
+          document.getElementById("zeusW").value = "zeuz";
+          document.getElementById("poseW").value = "poseidon";
+          document.getElementById("hadeW").value = "hades";
+          document.getElementById("zeusW").style.visibility = "visible";
+          document.getElementById("poseW").style.visibility = "visible";
+          document.getElementById("hadeW").style.visibility = "visible";
+          var fatherChoice = "Good, now choose your father.";
+          document.getElementById("output").innerHTML = fatherChoice;
+        }
+        function z()
+        {
+          document.getElementById("zeusW").style.visibility = "hidden";
+          document.getElementById("poseW").style.visibility = "hidden";
+          document.getElementById("hadeW").style.visibility = "hidden";
+          document.getElementById("a1").style.visibility = "visible";
+          document.getElementById("a2").style.visibility = "visible";
+          var script = "Zeus: Good choice. Zeus controls the skies and everything in it. He can be as powerful as lightning and as light as a cloud, and now, you have that power. Will you choose to use your power for Good or Evil?";
+          document.getElementById("output").innerHTML = script;
+        }
+        function p()
+        {
+          document.getElementById("zeusW").style.visibility = "hidden";
+          document.getElementById("poseW").style.visibility = "hidden";
+          document.getElementById("hadeW").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "visible";
+          document.getElementById("a4").style.visibility = "visible";
+          var script = "Poseidon: Good Choice. Poseidon controls the sea and is able to cause earthquakes, hence the nickname Earth-Shaker. You have the power to control water, talk to horses, and you have faster regenerative powers than most others. But, with great power comes great responsibility. How for what cause are you going to use your powers for?";
+          document.getElementById("output").innerHTML = script;
+        }
+        function h()
+        {
+          document.getElementById("zeusW").style.visibility = "hidden";
+          document.getElementById("poseW").style.visibility = "hidden";
+          document.getElementById("hadeW").style.visibility = "hidden";
+          document.getElementById("a1").style.visibility = "visible";
+          document.getElementById("a2").style.visibility = "visible";
+          var script = "Hades: Good Choice. Hades is able to necromance, or in other words raise the dead. You have a way of being swift on the battlefield. You can travel secretly using shadows and you are a great swordsman. Which force will you join?";
+          document.getElementById("output").innerHTML = script;
+        }
+        function battle1()
+        {
+          var script = "Smart Choice. Time for some practice. You go to find some monsters in the forest farthest away from the city. Luckily you do find a monster, but you accidentally found one of the most dangerous ones. It is a Minotaur. What do you do?"
+          document.getElementById("output").innerHTML = script;
+          document.getElementById("o1").style.visibility = "visible";
+          document.getElementById("o2").style.visibility = "visible";
+          document.getElementById("o3").style.visibility = "visible";
+          document.getElementById("a1").style.visibility = "hidden";
+          document.getElementById("a2").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "hidden";
+          document.getElementById("a4").style.visibility = "hidden";
+        }
+        function battle2()
+        {
+          var script = "Interesting Choice. You go to hunt for monsters and you know just where to find them. You find an entrance to the underworld and stand by the river of Styx remembering your ancestor from long ago. Suddenly you are attacked by Cerberus, the three headed dog. What do you do?"
+          document.getElementById("output").innerHTML = script;
+          document.getElementById("o1").style.visibility = "visible";
+          document.getElementById("o2").style.visibility = "visible";
+          document.getElementById("o3").style.visibility = "visible";
+          document.getElementById("a1").style.visibility = "hidden";
+          document.getElementById("a2").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "hidden";
+          document.getElementById("a4").style.visibility = "hidden";
+        }
+        function battle3()
+        {
+          var script = "Smart Choice. Time for some practice. You go to find some monsters in the forest farthest away from the city. Luckily you do find a monster, but you accidentally found one of the most dangerous ones. It is a Minotaur. What do you do?"
+          document.getElementById("output").innerHTML = script;
+          document.getElementById("o1").style.visibility = "visible";
+          document.getElementById("o2").style.visibility = "visible";
+          document.getElementById("o3").style.visibility = "visible";
+          document.getElementById("a1").style.visibility = "hidden";
+          document.getElementById("a2").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "hidden";
+          document.getElementById("a4").style.visibility = "hidden";
+        }
+        function battle4()
+        {
+          var script = "Adequate Choice. Now, it's time for you to train. You decide to become invincible and dominate the world. In order to become invincible, you must bathe in the river of Styx. This is particularly difficult because the river is made of lava. What do you do?"
+          document.getElementById("output").innerHTML = script;
+          document.getElementById("o1").style.visibility = "visible";
+          document.getElementById("o2").style.visibility = "visible";
+          document.getElementById("o3").style.visibility = "visible";
+          document.getElementById("a1").style.visibility = "hidden";
+          document.getElementById("a2").style.visibility = "hidden";
+          document.getElementById("a3").style.visibility = "hidden";
+          document.getElementById("a4").style.visibility = "hidden";
+        }
+      </script>
+  </head>
+  <body onload="onload()">
+    <span id = "output"></span>
+    <br>
+    <input id = "starting" type = "button" value = "START" onClick = "chooseFather()">
+    <br>
+    <input id = "zeusW" type = "button" value = "zeuz" onClick = "z()">
+    <input id = "poseW" type = "button" value = "poseidon" onClick = "p()">
+    <input id = "hadeW" type = "button" value = "hades" onClick = "h()">
+    <br>
+    <input id = "a1" type = "button" value = "good" onClick = "battle1()">
+    <input id = "a2" type = "button" value = "evil" onClick = "battle2()">
+    <br>
+    <input id = "a3" type = "button" value = "good" onClick = "battle3()">
+    <input id = "a4" type = "button" value = "evil" onClick = "battle4()">
+    <br>
+    <input id = "o1" type = "button" value = "Option 1" onClick = "Option1()">
+    <input id = "o2" type = "button" value = "Option 2" onClick = "Option2()">
+    <input id = "o3" type = "button" value = "Option 3" onClick = "Option3()">
+    <br>
+    <input id = "o4" type = "button" value = "Option 1" onClick = "Option4()">
+    <input id = "o5" type = "button" value = "Option 2" onClick = "Option5()">
+    <input id = "o6" type = "button" value = "Option 3" onClick = "Option6()">
+    <br>
+    <input id = "o7" type = "button" value = "Option 1" onClick = "Option7()">
+    <input id = "o8" type = "button" value = "Option 2" onClick = "Option8()">
+    <input id = "o9" type = "button" value = "Option 3" onClick = "Option9()">
+  </body>
+</center>
+  </html>
